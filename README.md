@@ -1,24 +1,13 @@
-# README
+# QA Application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Prerequisites
 
-Things you may want to cover:
+* Ruby 2.4
+* Rails 5.1
 
-* Ruby version
+### Running
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Run 'bundle install' to install the dependencies in the Gemfile
+* Run 'rake db:migrate' to run the migration files
+* Run 'rails s' to run the development server
+* Hop onto 'localhost:3000' to use the application
