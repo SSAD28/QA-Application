@@ -1,9 +1,9 @@
 <% @auth = session[:omniauth] if session[:omniauth] %>
 
-<h2><%= @question.qtext %></h2>
 
 
-<p><%= @question.description %></p>
+
+<h1><%= @question.description %></h1>
 <hr>
 <% if current_user %>
 	<% if @question.user_id == current_user.id%>

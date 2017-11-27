@@ -19,10 +19,17 @@ class AnswersController < ApplicationController
 		@question = Question.find(params[:question_id])
 		@answer = @question.answers.find(params[:id])
 		@answer.destroy
-		redirect_to post_path(@question)
+		redirect_to question_path(@question)
 	end
 
-
+	def show
+		if @answer.reviews.blank?
+			@average_review = 0
+		else
+			@average_review = @answer.reviews.average(:rating).round(2)
+		end
+	end
+	
 	private def answer_params
 		params.require(:answer).permit(:body)
 	end

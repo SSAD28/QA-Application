@@ -4,6 +4,11 @@
 
 * Ruby 2.4
 * Rails 5.1
+* https://github.com/SSAD28/DEEPQA-API
+
+### Note
+
+* Make sure https://github.com/SSAD28/DEEPQA-API is running first (in another tab of terminal). Instructions for running it are given in that repository itself.
 
 ### Running
 
